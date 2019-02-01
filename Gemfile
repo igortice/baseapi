@@ -48,8 +48,6 @@ gem 'awesome_print'
 
 gem 'annotate'
 
-gem 'api-pagination'
-
 gem 'cancancan', '~> 2.0'
 
 gem 'devise'

@@ -39,4 +39,8 @@ class User < ApplicationRecord
 
   include DeviseTokenAuth::Concerns::User
   include ::Ability::Roles::Config
+
+  # KAMINARI
+  # paginates_per 1
+  # max_paginates_per 100
 end

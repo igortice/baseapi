@@ -4,6 +4,8 @@ class API::V1::UsersController < API::V1::BaseController
   load_and_authorize_resource
 
   def index
-    paginate json: @users
+    users = @users.page(params[:page])
+
+    render json: UserSerializer.new(users)
   end
 end

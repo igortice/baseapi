@@ -45,7 +45,6 @@ GEM
     annotate (2.7.4)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 13.0)
-    api-pagination (4.8.2)
     arel (9.0.0)
     ast (2.4.0)
     awesome_print (1.8.0)
@@ -200,7 +199,6 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  api-pagination
   awesome_print
   bootsnap (>= 1.1.0)
   byebug
