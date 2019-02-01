@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RoleAdmin
+module Ability::Roles::Admin
   extend ActiveSupport::Concern
 
   included do

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module ConfigRoles
+module Ability::Roles::Config
   extend ActiveSupport::Concern
 
   included do

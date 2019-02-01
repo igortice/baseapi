@@ -3,9 +3,9 @@
 class API::V1::BaseController < ApplicationController
   include CanCan::ControllerAdditions
 
-  alias_method :current_user, :current_v1_user
+  alias_method :current_user, :current_api_v1_user
 
-  before_action :authenticate_v1_user!
+  before_action :authenticate_api_v1_user!
 
   rescue_from CanCan::AccessDenied do |exception|
     Rails.logger.debug "Accesso negado em #{exception.action} #{exception.subject.inspect}"

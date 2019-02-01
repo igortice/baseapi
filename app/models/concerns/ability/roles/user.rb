@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module RoleUser
+module Ability::Roles::User
   extend ActiveSupport::Concern
 
   included do

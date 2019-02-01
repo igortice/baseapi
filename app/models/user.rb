@@ -38,5 +38,5 @@ class User < ApplicationRecord
          :confirmable
 
   include DeviseTokenAuth::Concerns::User
-  include ::ConfigRoles
+  include ::Ability::Roles::Config
 end

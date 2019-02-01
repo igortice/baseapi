@@ -3,8 +3,8 @@
 class Ability
   include CanCan::Ability
 
-  include ::RoleUser
-  include ::RoleAdmin
+  include ::Ability::Roles::User
+  include ::Ability::Roles::Admin
 
   def initialize(user)
     @user = user || User.new
