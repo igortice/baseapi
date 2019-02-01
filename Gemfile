@@ -44,16 +44,24 @@ group :development do
   gem 'rubocop', require: false
 end
 
+gem 'awesome_print'
+
+gem 'annotate'
+
+gem 'api-pagination'
+
+gem 'cancancan', '~> 2.0'
+
 gem 'devise'
 
+gem 'devise_token_auth'
+
 gem 'fast_jsonapi'
+
+gem 'kaminari'
+
+gem 'pry-rails'
 
 gem 'rack-attack'
 
 gem 'shog'
-
-gem 'awesome_print'
-
-gem 'pry-rails'
-
-gem 'annotate'
