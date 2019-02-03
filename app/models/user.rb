@@ -40,7 +40,15 @@ class User < ApplicationRecord
   include DeviseTokenAuth::Concerns::User
   include ::Ability::Roles::Config
 
+  before_create :set_default_role
+
   # KAMINARI
   # paginates_per 1
   # max_paginates_per 100
+
+  private
+
+  def set_default_role
+    self.roles = ROLES[1] # :user
+  end
 end
